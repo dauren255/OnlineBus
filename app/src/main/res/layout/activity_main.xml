@@ -16,15 +16,21 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/fromPlace"
+            android:maxLength="10"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.439"
+            android:layout_weight="0.5"
+            android:maxLines="1"
             android:hint="Откуда" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:id="@+id/toPlace"
+            android:maxLength="10"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:maxLines="1"
             android:hint="Куда" />
     </LinearLayout>
 
@@ -35,20 +41,21 @@
 
         <Button
             android:id="@+id/datePick"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:background="@drawable/button_background"
+            android:background="@drawable/date_button_background"
             android:layout_marginRight="2dp"
             android:layout_marginEnd="2dp"
             android:text="@string/date"
             android:textColor="@android:color/white"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/search"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:background="@drawable/button_background"
+            android:background="@drawable/search_button_background"
             android:layout_marginLeft="2dp"
             android:layout_marginStart="2dp"
             android:text="@string/search"
